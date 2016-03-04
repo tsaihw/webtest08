@@ -1,0 +1,105 @@
+/* ================================================================== 1.0 RESETS ================================================================== */
+*{margin:0;padding:0;}
+img{border:0;}
+
+/* ================================================================== 2.0 HTML ELEMENTS ================================================================== */
+
+/* ================================= 2.1 FONT SIZING ================================= */
+body{font-size:62.5%;}
+
+h1{font-size:2.5em;}
+h2{font-size:1.75em;}
+h3{font-size:1.5em;}
+h4{font-size:1.35em;}
+h5,h6{font-size:1.2em;}
+li{font-size:1.2em;}
+li li{font-size:1em;}
+
+/* ================================= 2.2 FORMAT ================================= */
+body{background:#FFF url(../images/bg.jpg) no-repeat center 20px;color:#666;text-align:center;overflow-y:scroll}
+p, blockquote{line-height:1.5em;padding:0 0 1em 0;}
+blockquote{border-top:1px solid #DDD; border-bottom:1px solid #DDD; background:url(../images/quote-open.gif) 0 1em no-repeat;margin:1em 0; padding:1em 0 1em 35px; }
+blockquote p{ background:url(../images/quote-close.gif) right bottom no-repeat;padding:0 25px 0 0;}
+
+/*  FORMAT > fonts  */
+@font-face {
+    font-family: 'bitstream_vera_sans_monoroman';
+    src: url('fonts/veramono-webfont.eot');
+    src: url('fonts/veramono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/veramono-webfont.woff') format('woff'),
+         url('fonts/veramono-webfont.ttf') format('truetype'),
+         url('fonts/veramono-webfont.svg#bitstream_vera_sans_monoroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{font-family:Garamond,"Times New Roman", Times, serif;}
+h1,h2,h3,h4,h5,h6{font-family: 'bitstream_vera_sans_monoroman';font-weight:normal;}
+em,i{font-style:italic;}
+strong,b{font-weight:bold;}
+
+
+/* ================================= 2.3 ANCHORS ================================= */
+a{color:#444;text-decoration:underline;}
+a:link{ }
+a:visited{ }
+a:hover{color:#000;}
+a:focus{color:#000;}
+a:active{color:#000;}
+
+/* ================================= 2.4 HEADERS ================================= */
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+h1 a{background:url(../images/logo.png) no-repeat top right;width:280px;height:27px;text-indent:-9999px;overflow:hidden;float:left;margin:0;padding:0 25px 6px 0;}
+h2{}
+
+.slogan{clear:both;float:left;margin:5px 0 85px;padding:0 0 0 16px;color:#444;font-family:'bitstream_vera_sans_monoroman';font-size:1.4em;font-weight:bold;}
+
+/* ================================================================== 3.0 STANDARD LAYOUT  ========================================== */
+.page{margin:10px auto 50px auto;padding:0;text-align:left;width:960px;}
+.page .padding{padding:20px 10px 5px 10px;}
+.header{padding:0;}
+.nav{clear:both;float:left;width:190px;padding:0 0 0 16px;}
+	.nav ul{margin:0;padding:0;}
+    .nav ul ul{display:none;}
+	.nav li{list-style:none;margin:0;padding:0;}
+	.nav li li{padding:0 0 0 20px;}
+	.nav a{display:block;color:#444;font-family:'bitstream_vera_sans_monoroman';font-size:1.2em;font-weight:bold;text-decoration:none;padding:0 0 24px;}
+	.nav li a:hover,.nav li a:focus,.nav li a:active{color:#000;text-decoration:underline;}
+	
+.main{position:absolute;margin:104px 0 0 206px;}
+	.content{display:none;position:absolute;padding:38px 0 0;}
+	.column{float:left;width:293px;padding:0 35px 20px 0;background:#FFF;}
+    .content p{font-family:Garamond,serif;font-size:1.5em;text-align:justify;color:#333;}
+	.content .caveat{font-size:0.85em;}
+	.content .quote{font-style:italic;}
+	.content img{margin:0 0 20px;width:293px;}
+
+.footer{clear:both;font-family:Arial, Helvetica, sans-serif;}
+
+#home{display:block;}
+	#home .column{min-height:404px;}
+#oded{background:#FFF;min-height:404px;width:905px;}
+	
+/* ================================================================== 6.0 CLEARING AND GENERIC STYLES  ========================================== */
+.clear:after{clear:both;content:".";display:block;height:0;visibility:hidden;/*IE6*/}
+.clear{display:block;}
+
+.hide{display:none;}
+.hidden{left:-500px;position:absolute;top:-500px;width:100px;}
+
+.shortcuts{width:auto;float:left;clear:both;}
+	.shortcuts ul, .shortcuts ul li{list-style-type:none;height:0;padding:0;margin:0;}
+	.shortcuts ul{position:absolute;width:99.9%;top:0;z-index:1000;}
+	.shortcuts li a{display:block;color:#666;position:absolute;left:-500px;top:-500px; }
+	.shortcuts li a:focus, .shortcuts li a:active{position:absolute;left:0;top:0;width:100%;text-align:center;padding:3px 0;background-color:#fff; font-size:1em;}
+	#skip-content-hold, #skip-nav-hold {position:relative;left:-200%;height:0px;}
+	#skip-content-hold a, #skip-nav-hold a{display:none;}
+
+/* COOKIE PROMPT */
+.cookie-prompt{bottom:-300px;display: none;left: 10px;position: fixed;text-align: left;top: auto;width: 98.5%;z-index: 19999;margin:10px;}
+	.cookie-prompt .padding{padding:10px 10px 0;}
+	.cookie-prompt a{color:#FFF;}
+	.cookie-prompt .body{background:#444;color:#FFF;margin:auto;padding-right:20px;position:relative;width:940px;font-family:Arial, Helvetica, sans-serif;}
+	.cookie-prompt .close{position:absolute;top:10px;right:10px;display:block;background:url(../images/close.png) no-repeat left top;text-indent:-99em;overflow:hidden; width:15px;height:15px;}
+	.cookie-prompt p{font-size:1.1em;}
